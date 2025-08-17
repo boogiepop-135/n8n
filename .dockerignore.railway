@@ -1,0 +1,60 @@
+# .dockerignore específico para Railway - MÜLLBLUE Chatbot
+# Excluir solo archivos innecesarios para el despliegue
+
+# Archivos de desarrollo
+node_modules/
+.git/
+.github/
+.vscode/
+.nyc_output/
+coverage/
+
+# Archivos de build
+dist/
+build/
+.turbo/
+.next/
+.nuxt/
+
+# Archivos de testing
+cypress/
+test/
+__tests__/
+*.test.js
+*.test.ts
+*.spec.js
+*.spec.ts
+
+# Archivos de documentación
+*.md
+docs/
+README.md
+CHANGELOG.md
+CONTRIBUTING.md
+
+# Archivos de configuración local
+.biome.jsonc
+.prettierrc.js
+.eslintrc.js
+jest.config.js
+tsconfig.json
+
+# Archivos temporales
+*.log
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# Archivos de Docker local (pero mantener el Dockerfile principal)
+docker-compose.yml
+docker-compose.override.yml
+
+# Archivos de Railway local
+.railway/
+railway.toml
+
+# Mantener solo lo esencial para Railway
+!Dockerfile
+!railway.json
+!.railwayignore
