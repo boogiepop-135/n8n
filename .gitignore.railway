@@ -1,0 +1,81 @@
+# .gitignore específico para Railway - MÜLLBLUE Chatbot
+# Excluir archivos pesados y innecesarios para el despliegue
+
+# Archivos de desarrollo pesados
+node_modules/
+packages/
+cypress/
+test/
+__tests__/
+*.test.js
+*.test.ts
+*.spec.js
+*.spec.ts
+
+# Archivos de build y cache
+dist/
+build/
+.turbo/
+.next/
+.nuxt/
+.cache
+.parcel-cache
+
+# Archivos de documentación pesados
+*.md
+docs/
+README.md
+CHANGELOG.md
+CONTRIBUTING.md
+CODE_OF_CONDUCT.md
+SECURITY.md
+LICENSE.md
+LICENSE_EE.md
+
+# Archivos de configuración local
+.biome.jsonc
+.prettierrc.js
+.eslintrc.js
+jest.config.js
+tsconfig.json
+tsconfig.build.json
+
+# Archivos de Docker y Railway
+docker/
+docker-compose.yml
+.dockerignore
+.railway/
+railway.toml
+
+# Archivos temporales y logs
+*.log
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+.nyc_output
+coverage
+
+# Archivos de Git
+.git/
+.github/
+
+# Archivos de VS Code
+.vscode/
+
+# Archivos de npm/yarn
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
+# Archivos de entorno
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Mantener solo lo esencial para Railway
+!railway.json
+!.railwayignore
+!README.md
